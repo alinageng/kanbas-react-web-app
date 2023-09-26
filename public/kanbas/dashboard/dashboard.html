@@ -2,26 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="../../vendors/bootstrap/css/bootstrap.min.css"
     />
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="../KanbasNavigation/kanbasNavigation.css" />
-    <link rel="stylesheet" href="account.css" />
   </head>
   <body>
     <div class="wd-flex-row-container">
       <div class="wd-kanbas-navigation">
         <ul class="list-group">
-          <li class="list-group-item active account">
+          <li class="list-group-item account">
             <a href="../account/account.html">
               <i class="fas fa-user-circle"></i>
               Account
             </a>
           </li>
-          <li class="list-group-item">
-            <a href="../dashboard/dashboard.html">
+          <li class="list-group-item active">
+            <a href="#">
               <i class="fas fa-tachometer-alt"></i>
               Dashboard
             </a>
@@ -70,36 +69,29 @@
           </li>
         </ul>
       </div>
-      <div class="wd-account-navigation">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#">Notifications</a>
-          </li>
-          <li class="list-group-item">
-            <a href="../profile/index.html">Profile</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Files</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Settings</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">ePortfolios</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Shared Content</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">The Hub</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Qwickly Course Tools</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Global Announcements</a>
-          </li>
-        </ul>
+
+      <div class="wd-dashboard-container">
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <h1>Dashboard</h1>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12">
+            <h2>Published Courses (24)</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning"
+          >
+            <h4>1</h4>
+          </div>
+        </div>
       </div>
     </div>
   </body>

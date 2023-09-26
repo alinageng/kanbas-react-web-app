@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="list-group-item">
-            <a href="#">
+            <a href="../dashboard/dashboard.html">
               <i class="fas fa-tachometer-alt"></i>
               Dashboard
             </a>
@@ -102,6 +102,99 @@
             <a href="#">Global Announcements</a>
           </li>
         </ul>
+      </div>
+
+      <div class="wd-profile-edit">
+        <i class="fas fa-user-circle"></i>
+        <label for="name" class="form-label"> Name:* </label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Alina Geng"
+        />
+
+        <label for="pronouns" class="form-label"> Pronouns: </label>
+        <select class="form-select" for="pronouns">
+          <option selected>None</option>
+        </select>
+
+        <label for="title" class="form-label"> Title: </label>
+        <input type="text" class="form-control" id="tile" />
+
+        <h2>Contact</h2>
+        <p>
+          No registered services, you can add some on the
+          <span>settings</span> page.
+        </p>
+        <div>
+          <label for="biography" class="form-label"><h2>Biography</h2></label>
+          <textarea class="form-control" id="biography" rows="3">
+Student</textarea
+          >
+        </div>
+
+        <div class="container">
+          <div class="wd-edit-links row">
+            <h2>Links</h2>
+            <div class="col">
+              <div class="text-center">
+                <h4>Title</h4>
+              </div>
+              <div class="row">
+                <div class="col-10 wd-edit-title">
+                  <input type="text" class="form-control" value="YouTube" />
+                </div>
+                <div class="col-2 wd-edit-arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row text-center">
+                <h4>URL</h4>
+              </div>
+              <div class="row">
+                <div class="col-10 wd-edit-title">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://www.youtube.com/"
+                  />
+                </div>
+                <div class="col-2 wd-edit-x">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-light">
+              Add another link
+            </button>
+          </div>
+        </div>
+        <div class="row float-end">
+          <div class="col">
+            <a href="index.html">
+              <button type="submit" class="btn btn-light">Cancel</button>
+            </a>
+            <a href="index.html">
+              <button type="submit" class="btn btn-danger">Save Profile</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wd-edit-button float-end">
+        <a href="index.html">
+          <button type="submit" class="btn btn-light">
+            <i class="fas fa-pencil-alt"></i>
+            Cancel Editing
+          </button>
+        </a>
       </div>
     </div>
   </body>

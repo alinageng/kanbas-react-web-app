@@ -33,6 +33,10 @@
     color: red;
 }
 
+.wd-kanbas-navigation .list-group-item.active {
+    background-color: white;
+}
+
 
 .wd-kanbas-navigation .list-group-item.active a {
     color: red;

@@ -9,6 +9,27 @@
     font-size: 100px;
     margin-top: 20px;
     margin-bottom: 10px;
+    
+}
+
+.wd-profile-edit i {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.wd-profile-edit span {
+    color: red
+}
+
+.wd-profile span {
+    color: red
+}
+
+
+.wd-profile-edit label {
+    font-weight: bold;
 }
 
 .wd-profile h1 {
@@ -37,6 +58,45 @@
 .wd-edit-button button {
     margin-top: 20px;
     margin-right: 10px;
-    padding: 10px;
+    padding: 1px;
     font-size: 15px;
 }
+
+.wd-edit-arrow  {
+    font-size: 10px;
+    padding: 0;
+    margin-top: 10;
+}
+
+.wd-edit-x  {
+    font-size: 10px;
+    padding: 0;
+    margin-top: 10;
+    color: red;
+}
+
+.wd-edit-links i {
+    font-size: 25px;
+    padding: 2;
+    margin-top: 7px;
+    margin-right:2px;
+}
+
+.wd-edit-title {
+    font-size: 25px;
+    padding:0;
+}
+
+
+
+/* .wd-edit-links {
+    display: flex;
+}
+.wd-edit-links col {
+   flex: 1;
+   text-align: center;
+}
+
+.wd-edit-links col h3{
+    text-align: center;
+ } */
