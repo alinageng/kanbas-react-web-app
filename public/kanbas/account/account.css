@@ -1,0 +1,37 @@
+
+.wd-account-navigation {
+    width: 190px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.wd-account-navigation .list-group {
+    border-radius: 0;
+    margin-left: 12px;
+}
+
+.wd-account-navigation .list-group-item {
+    border: none;
+}
+
+.wd-account-navigation .list-group-item a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-account-navigation .list-group-item.active a {
+    text-decoration: none;
+    color: black;
+}
+
+.wd-account-navigation .list-group-item.active {
+    border: none;
+    border-left: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+

@@ -1,0 +1,136 @@
+
+.wd-flex-row-container {
+    display: flex;
+}
+  
+.wd-kanbas-navigation {
+    min-height: 100vh; 
+    background-color: black;
+    width: 80px;
+}
+
+.wd-kanbas-navigation .list-group {
+    border-radius: 0;
+}
+
+.wd-kanbas-navigation .list-group-item {
+    border: none;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.wd-kanbas-navigation .list-group-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.wd-kanbas-navigation .list-group-item i {
+    font-size: 40px;
+    color: red;
+}
+
+
+.wd-kanbas-navigation .list-group-item.active a {
+    color: red;
+}
+
+.wd-kanbas-navigation .list-group-item.account i {
+    color: white;
+}
+
+.wd-kanbas-navigation .list-group-item.active.account{
+    background-color: white;
+}
+
+.wd-kanbas-navigation .list-group-item.active.account i {
+    color: gray;
+}
+
+
+
+
+
+/* 
+.wd-kanbas-navigation {
+    width: 80px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height:100%;
+}
+
+.wd-kanbas-navigation .list-group {
+    border-radius: 0;
+}
+
+.wd-kanbas-navigation .list-group-item {
+    border: none;
+}
+
+.wd-kanbas-nagivation .list-group-item a {
+    text-decoration: none; 
+    color: white;
+    background-color: black;
+}
+
+.wd-kanbas-navigation .list-group-item i {
+    font-size: 40px;
+    color: red;
+} */
+
+
+/* 
+.wd-icon-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wd-icon-link a {
+}
+
+.wd-icon-link a:visited {
+    color:white;
+}
+
+.wd-icon-link i {
+    font-size: 40px;
+    color: red;
+}
+
+.wd-icon-link p {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wd-icon-link-profile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wd-icon-link-profile a {
+    text-decoration: none; 
+}
+
+.wd-icon-link-profile a:visited {
+    color:white;
+}
+
+.wd-icon-link-profile i {
+    font-size: 40px;
+    color: white;
+}
+
+.wd-icon-link-profile p {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+} */
