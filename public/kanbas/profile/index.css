@@ -1,16 +1,24 @@
 .wd-profile {
-    flex-grow: 1;
-    white-space: normal;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 320px;
+    margin-right: 200px;
+    bottom: 0;
+    flex: 1;
 }
 
 .wd-profile i {
     font-size: 100px;
     margin-top: 20px;
     margin-bottom: 10px;
-    
 }
+
+.wd-profile-edit {
+    white-space: normal;
+    margin-left: 320px;
+    margin-right: 200px;
+    bottom: 0;
+    flex: 1;
+}
+
 
 .wd-profile-edit i {
     font-size: 100px;
@@ -51,14 +59,18 @@
 }
 
 .wd-edit-button {
-    width: 200px;
+    width: 150px;
     height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .wd-edit-button button {
     margin-top: 20px;
     margin-right: 10px;
-    padding: 1px;
+    padding: 10px;
     font-size: 15px;
 }
 
@@ -88,15 +100,3 @@
 }
 
 
-
-/* .wd-edit-links {
-    display: flex;
-}
-.wd-edit-links col {
-   flex: 1;
-   text-align: center;
-}
-
-.wd-edit-links col h3{
-    text-align: center;
- } */

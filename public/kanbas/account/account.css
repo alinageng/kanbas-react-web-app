@@ -1,8 +1,12 @@
 
 .wd-account-navigation {
     width: 190px;
-    min-height: 100vh;
-    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 80px; 
+    bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .wd-account-navigation .list-group {
