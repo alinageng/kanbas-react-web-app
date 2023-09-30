@@ -13,66 +13,66 @@
     <link rel="stylesheet" href="../profile/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col wd-kanbas-navigation">
-          <ul class="list-group">
-            <li class="list-group-item account">
-              <a href="../account/account.html">
-                <i class="fas fa-user-circle"></i>
-                Account
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="../dashboard/dashboard.html">
-                <i class="fas fa-tachometer-alt"></i>
-                Dashboard
-              </a>
-            </li>
-            <li class="list-group-item active">
-              <a href="#">
-                <i class="fas fa-book"></i>
-                Courses
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="fas fa-calendar-week"></i>
-                Calender
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="fas fa-inbox"></i>
-                Inbox
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="far fa-clock"></i>
-                History
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="fab fa-octopus-deploy"></i>
-                Studio
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="fas fa-arrow-right"></i>
-                Commons
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <i class="far fa-question-circle"></i>
-                Help
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="col wd-kanbas-navigation">
+      <ul class="list-group">
+        <li class="list-group-item account">
+          <a href="../account/account.html">
+            <i class="fas fa-user-circle"></i>
+            Account
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="../dashboard/dashboard.html">
+            <i class="fas fa-tachometer-alt"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="list-group-item active">
+          <a href="#">
+            <i class="fas fa-book"></i>
+            Courses
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fas fa-calendar-week"></i>
+            Calender
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fas fa-inbox"></i>
+            Inbox
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="far fa-clock"></i>
+            History
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fab fa-octopus-deploy"></i>
+            Studio
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            Commons
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="far fa-question-circle"></i>
+            Help
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <div class="row wd-margin-80">
         <div class="col wd-assignments">
           <div class="row">
             <div class="col-1 d-flex align-items-center align">
@@ -80,7 +80,7 @@
                 class="fas fa-grip-lines mx-1 wd-red-color wd-font-size-20"
               ></i>
             </div>
-            <div class="col-8 d-flex align-items-center align">
+            <div class="col d-flex align-items-center align">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mt-3">
                   <li class="breadcrumb-item">
@@ -105,16 +105,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-11">
+            <div class="col">
               <hr />
             </div>
           </div>
 
           <div class="row">
-            <div class="col-2">
-              <div
-                class="wd-account-navigation wd-account-navigation-assignment"
-              >
+            <div class="col-2 px-0">
+              <div class="wd-account-navigation">
                 <p class="wd-text mt-2">202310_2 Fall 2022 Semest..</p>
                 <ul class="list-group">
                   <li class="list-group-item">
@@ -136,7 +134,7 @@
                     <a href="../assignments/index.html">Assignments</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="#">Grades</a>
+                    <a href="../grades/index.html">Grades</a>
                   </li>
                   <li class="list-group-item">
                     <a href="#">People</a>
@@ -168,12 +166,12 @@
                 </ul>
               </div>
             </div>
-            <div class="col-9">
+            <div class="col">
               <div class="row">
                 <div class="col">
                   <div class="float-end">
-                    <i class="fas fa-check-circle"></i>
-                    Published
+                    <i class="fas fa-check-circle wd-green"></i>
+                    <text class="wd-green">Published</text>
                     <button type="submit" class="btn btn-light">
                       <i class="fas fa-ellipsis-v"></i>
                     </button>
@@ -256,8 +254,74 @@ This assignment describes how to install the development environment for creatin
                     <label for="submission-type">Submission Type</label>
                   </div>
                 </div>
+                <div class="col-8 wd-submission-type">
+                  <ul class="list-group">
+                    <li class="list-group-item border-bottom-0">
+                      <select class="form-select w-75">
+                        <option selected>Online</option>
+                      </select>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <b>Online Entry Options</b>
+                    </li>
+
+                    <li class="list-group-item border-bottom-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="text-entry"
+                      />
+                      <label for="text-entry">Text Entry</label>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="website-url"
+                      />
+                      <label for="website-url">Website URL</label>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="media-recordings"
+                      />
+                      <label for="media-recordings">Media Recordings</label>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="student-recordings"
+                      />
+                      <label for="student-annotation">Student Annotation</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="file-upalods"
+                      />
+                      <label for="file-uploads">File Uploads</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-3">
+                  <div class="float-end">
+                    <label for="assign-to">Assign</label>
+                  </div>
+                </div>
                 <div class="col-8">
-                  <div class="container border-3"></div>
+                  <ul class="list-group">
+                    <li class="list-group-item">Assign To</li>
+                    <li class="list-group-item">Terminator</li>
+                    <li class="list-group-item">Blade Runner</li>
+                    <li class="list-group-item">Lord of the Ring</li>
+                    <li class="list-group-item active">Star Wars</li>
+                  </ul>
                 </div>
               </div>
             </div>

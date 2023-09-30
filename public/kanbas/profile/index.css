@@ -1,8 +1,5 @@
-.wd-profile {
-    margin-left: 320px;
-    margin-right: 200px;
-    bottom: 0;
-    flex: 1;
+.wd-account-nagivation-profile {
+    margin-left: 90px;
 }
 
 .wd-profile i {
@@ -10,15 +7,6 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
-.wd-profile-edit {
-    white-space: normal;
-    margin-left: 320px;
-    margin-right: 200px;
-    bottom: 0;
-    flex: 1;
-}
-
 
 .wd-profile-edit i {
     font-size: 100px;
@@ -59,12 +47,12 @@
 }
 
 .wd-edit-button {
-    width: 150px;
+    /* width: 150px;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 
 .wd-edit-button button {
