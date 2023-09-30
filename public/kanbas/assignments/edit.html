@@ -2,170 +2,268 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../KanbasNavigation/kanbasNavigation.css" />
+    <link rel="stylesheet" href="../account/account.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../profile/index.css" />
   </head>
   <body>
-    <table border="0" width="100%">
-      <tr valign="top">
-        <td>
-          <ul>
-            <li>
-              <a href="../account.html">Account</a>
+    <div class="container">
+      <div class="row">
+        <div class="col wd-kanbas-navigation">
+          <ul class="list-group">
+            <li class="list-group-item account">
+              <a href="../account/account.html">
+                <i class="fas fa-user-circle"></i>
+                Account
+              </a>
             </li>
-            <li>
-              <a href="#">Dashboard</a>
+            <li class="list-group-item">
+              <a href="../dashboard/dashboard.html">
+                <i class="fas fa-tachometer-alt"></i>
+                Dashboard
+              </a>
             </li>
-            <li>
-              <a href="../coursesNavigation.html">Courses</a>
+            <li class="list-group-item active">
+              <a href="#">
+                <i class="fas fa-book"></i>
+                Courses
+              </a>
             </li>
-            <li>
-              <a href="#">Calender</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="fas fa-calendar-week"></i>
+                Calender
+              </a>
             </li>
-            <li>
-              <a href="#">Inbox</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="fas fa-inbox"></i>
+                Inbox
+              </a>
             </li>
-            <li>
-              <a href="#">History</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="far fa-clock"></i>
+                History
+              </a>
             </li>
-            <li>
-              <a href="#">Studio</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="fab fa-octopus-deploy"></i>
+                Studio
+              </a>
             </li>
-            <li>
-              <a href="#">Commons</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="fas fa-arrow-right"></i>
+                Commons
+              </a>
             </li>
-            <li>
-              <a href="#">Help</a>
-            </li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>
-              <a href="../home.html">Home</a>
-            </li>
-            <li>
-              <a href="#">Modules</a>
-            </li>
-            <li>
-              <a href="#">Piazza</a>
-            </li>
-            <li>
-              <a href="#">Zoom Meetings</a>
-            </li>
-            <li>
-              <a href="index.html">Assignments</a>
-            </li>
-            <li>
-              <a href="#">Quizzes</a>
-            </li>
-            <li>
-              <a href="../grades.html">Grades</a>
-            </li>
-            <li>
-              <a href="#">People</a>
-            </li>
-            <li>
-              <a href="#">Panopto Video</a>
-            </li>
-            <li>
-              <a href="#">Discussions</a>
-            </li>
-            <li>
-              <a href="#">Announcements</a>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-            </li>
-            <li>
-              <a href="#">Files</a>
-            </li>
-            <li>
-              <a href="#">Rubrics</a>
-            </li>
-            <li>
-              <a href="#">Outcomes</a>
-            </li>
-            <li>
-              <a href="#">Collaborations</a>
-            </li>
-            <li>
-              <a href="#">Syllabus</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
+            <li class="list-group-item">
+              <a href="#">
+                <i class="far fa-question-circle"></i>
+                Help
+              </a>
             </li>
           </ul>
-        </td>
-        <td>
-          <select>
-            <option>SpeedGrader</option>
-          </select>
-          <h2>Assignment Name</h2>
-          <input value="A1 - ENV + HTML" />
-          <p />
-          <textarea>This is the assignment description.</textarea>
-          <p />
-          Points<br />
-          <input value="100" />
-          <p />
-          Assignment Group <br />
-          <select>
-            <option>ASSIGNMENTS</option>
-          </select>
-          <p />
-          Display Grade as <br />
-          <select>
-            <option>Percentage</option>
-          </select>
-          <p />
-          Submission Type <br />
-          <select>
-            <option>Online</option>
-          </select>
-          <p />
-          Online Entry Options <br />
-          <label> <input type="checkbox" /> Text Entry </label> <br />
-          <label> <input type="checkbox" /> Website URL </label> <br />
-          <label> <input type="checkbox" /> Media Recordings </label> <br />
-          <label> <input type="checkbox" /> Student Annotation </label> <br />
-          <label> <input type="checkbox" /> File Uploads </label> <br />
-          <p />
-          Submission Attemps <br />
-          <select>
-            <option>Unlimited</option>
-          </select>
-          <p />
-          Plagiarism Review <br />
-          <select>
-            <option>None</option>
-          </select>
-          <p />
-          Group Assignment <br />
-          <label> <input type="checkbox" /> This is a group assignment</label>
-          <p />
-          Peer Reviews <br />
-          <label> <input type="checkbox" /> Require Peer Reviews</label>
-          <p />
-          Assign <br />
-          Assign to <br />
-          <input value="Everyone" />
-          <p />
-          Due <br />
-          <input type="date" value="2021-01-01" />
-          <p />
-          Available from <br />
-          <input type="date" value="2021-01-01" />
-          <p />
-          Until <br />
-          <input type="date" value="2021-01-01" />
-          <p />
-          <a href="index.html">
-            <button>Cancel</button>
-          </a>
-          <a href="index.html">
-            <button>Save</button>
-          </a>
-        </td>
-      </tr>
-    </table>
+        </div>
+        <div class="col wd-assignments">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center align">
+              <i
+                class="fas fa-grip-lines mx-1 wd-red-color wd-font-size-20"
+              ></i>
+            </div>
+            <div class="col-8 d-flex align-items-center align">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mt-3">
+                  <li class="breadcrumb-item">
+                    <span class="wd-red-color">CS5610.117... </span>
+                  </li>
+                  <li class="wd-red-color breadcrumb-item" aria-current="page">
+                    Assignments
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    A1 - ENV +...
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-2">
+              <div class="float-end mt-3 mb-3">
+                <button type="submit" class="btn btn-light">
+                  <i class="fas fa-glasses"></i>
+                  Student View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11">
+              <hr />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <div
+                class="wd-account-navigation wd-account-navigation-assignment"
+              >
+                <p class="wd-text mt-2">202310_2 Fall 2022 Semest..</p>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Piazza</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Zoom Meetings</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Modules</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Quizzes</a>
+                  </li>
+                  <li class="list-group-item active">
+                    <a href="../assignments/index.html">Assignments</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Grades</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">People</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Microsoft Teams Meetings</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">FACT Reporting and Photo Roster</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Discussions</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Announcements</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Pages</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Files</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Rubrics</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Outcomes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="row">
+                <div class="col">
+                  <div class="float-end">
+                    <i class="fas fa-check-circle"></i>
+                    Published
+                    <button type="submit" class="btn btn-light">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col">
+                  <label for="assignment-name">Assignment Name</label>
+                  <input
+                    type="text"
+                    id="assignment-name"
+                    class="form-control"
+                    value="A1 - ENV + HTML"
+                  />
+                  <textarea class="form-control mt-3" rows="6">
+This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                </textarea
+                  >
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-3">
+                  <div class="float-end">
+                    <label for="points">Points</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <input
+                    type="number"
+                    id="points"
+                    class="form-control"
+                    value="100"
+                  />
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-3">
+                  <div class="float-end">
+                    <label for="assignment-group">Assignment Group</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <select class="form-select" for="assignment-group">
+                    <option selected>ASSIGNMENTS</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-3">
+                  <div class="float-end">
+                    <label for="display-grade">Display Grade as</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <select class="form-select" for="display-grade">
+                    <option selected>Percentage</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-3"></div>
+                <div class="col-8">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="final-grade"
+                    value="option1"
+                  />
+                  <label for="final-grade"
+                    >Do not count this assignment towards the final grade</label
+                  >
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-3">
+                  <div class="float-end">
+                    <label for="submission-type">Submission Type</label>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container border-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
