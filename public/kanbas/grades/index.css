@@ -1,0 +1,33 @@
+.wd-grades-table td {
+    text-align: center;
+}
+
+.wd-grades-table th {
+    text-align: center;
+}
+
+.wd-text-left {
+    text-align: start;
+}
+
+.wd-grades-table th {
+    text-align: center;
+}
+
+.wd-grades-table .table>:not(:first-child) {
+    border-top: 0px;
+}
+
+
+.wd-text-left {
+    text-align: left;
+}
+
+.wd-out-of-100 {
+    font-size:13px;
+    font-weight:normal;
+}
+
+.wd-bg-light-blue {
+    background-color: lightblue;
+}
