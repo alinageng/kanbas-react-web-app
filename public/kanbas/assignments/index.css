@@ -70,8 +70,6 @@ body {
     color: black;
 }
 
-
-
 .wd-assignments-list .list-group-item i {
     font-size: 20px;
     margin-right: 10px;
@@ -97,6 +95,8 @@ body {
     border-top:3px solid gray;
 }
 
-
+.wd-width-150 {
+    width:150px;
+}
 
 

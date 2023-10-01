@@ -13,22 +13,27 @@
     <link rel="stylesheet" href="../profile/index.css" />
   </head>
   <body>
-    <div class="col wd-kanbas-navigation">
-      <ul class="list-group">
+    <div class="wd-kanbas-navigation">
+      <ul class="list-group border-0 text-center align-items-center">
+        <li>
+          <img
+            src="../../img/neu_logo.png"
+            width="80"
+            alt="Northeastern Uni. Logo"
+          />
+        </li>
         <li class="list-group-item account">
           <a href="../account/account.html">
-            <i class="fas fa-user-circle"></i>
-            Account
-          </a>
+            <i class="fas fa-user-circle"></i>Account</a
+          >
         </li>
         <li class="list-group-item">
           <a href="../dashboard/dashboard.html">
-            <i class="fas fa-tachometer-alt"></i>
-            Dashboard
-          </a>
+            <i class="fas fa-tachometer-alt"></i>Dashboard</a
+          >
         </li>
         <li class="list-group-item active">
-          <a href="#">
+          <a href="../courses/courses.html">
             <i class="fas fa-book"></i>
             Courses
           </a>
@@ -65,7 +70,7 @@
         </li>
         <li class="list-group-item">
           <a href="#">
-            <i class="far fa-question-circle"></i>
+            <i class="far fa-question-circle"></i><br />
             Help
           </a>
         </li>
@@ -116,7 +121,7 @@
                 <p class="wd-text mt-2">202310_2 Fall 2022 Semest..</p>
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <a href="#">Home</a>
+                    <a href="../home/index.html">Home</a>
                   </li>
                   <li class="list-group-item">
                     <a href="#">Piazza</a>
@@ -316,11 +321,58 @@ This assignment describes how to install the development environment for creatin
                 </div>
                 <div class="col-8">
                   <ul class="list-group">
-                    <li class="list-group-item">Assign To</li>
-                    <li class="list-group-item">Terminator</li>
-                    <li class="list-group-item">Blade Runner</li>
-                    <li class="list-group-item">Lord of the Ring</li>
-                    <li class="list-group-item active bg-light">
+                    <li class="list-group-item border-bottom-0">
+                      <b>Assign To</b>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="bg-light rounded p-2 wd-width-150">
+                            Everyone
+                            <div class="float-end">
+                              <i class="fas fa-times"></i>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <b>Due</b>
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <input
+                        type="date"
+                        class="form-control"
+                        value="2023-09-18"
+                      />
+                    </li>
+                    <li class="list-group-item border-bottom-0">
+                      <div class="row">
+                        <div class="col">
+                          <b>Available from</b>
+                        </div>
+                        <div class="col">
+                          <b>Until</b>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="date"
+                            class="form-control"
+                            value="2023-06-18"
+                          />
+                        </div>
+                        <div class="col">
+                          <input type="date" class="form-control" value="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item active pt-2 bg-light border-secondary"
+                    >
                       <div class="text-dark">
                         <i class="fas fa-plus"></i>
                         Add
@@ -345,8 +397,14 @@ This assignment describes how to install the development environment for creatin
                     >Notify users that this content has changed</label
                   >
                   <div class="float-end">
-                    <button type="submit" class="btn btn-light">Cancel</button>
-                    <button type="submit" class="btn btn-danger">Save</button>
+                    <a href="index.html">
+                      <button type="submit" class="btn btn-light">
+                        Cancel
+                      </button>
+                    </a>
+                    <a href="index.html">
+                      <button type="submit" class="btn btn-danger">Save</button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 
 .wd-account-navigation {
     width: 190px;
-    /* margin-left: -50px; */
+    /* margin-left:80px; */
 }
 
 .wd-account-navigation .list-group {
@@ -11,6 +11,7 @@
 
 .wd-account-navigation .list-group-item {
     border: none;
+    padding-left:10px;
 }
 
 .wd-account-navigation .list-group-item a {
