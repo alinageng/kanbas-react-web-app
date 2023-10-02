@@ -1,7 +1,5 @@
-
 .wd-account-navigation {
     width: 190px;
-    /* margin-left:80px; */
 }
 
 .wd-account-navigation .list-group {
@@ -31,7 +29,17 @@
     background-color: white;
 }
 
+.wd-account-navigation .list-group-item a > i {
+    padding-right:7px;
+}
 
+.wd-account-navigation .list-group-item li > i {
+    margin-left:20px;
+    color:gray;
+}
 
+.wd-account-navigation-navbar {
+    width: 100%;
+}
 
 
