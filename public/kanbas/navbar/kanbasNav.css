@@ -1,0 +1,35 @@
+.wd-navbar-back a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.wd-navbar-kanbas .list-group-item {
+    border: 0px;
+}
+
+.wd-navbar-kanbas .list-group-item a {
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+}
+
+.wd-navbar-kanbas .list-group-item a > i {
+    font-size: 40px;
+    color: red;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.wd-navbar-kanbas .list-group-item.float-end.i{
+    font-size: 20px;
+    color:gray;
+}
+
+.wd-navbar-course .list-group-item a > i {
+    margin-right:5px;
+}
+
+
+
+
