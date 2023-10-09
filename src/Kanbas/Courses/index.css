@@ -1,0 +1,12 @@
+.wd-course-breadcrumb {
+    font-size: 20px;
+    color: red;
+}
+
+.wd-course-breadcrumb .active{
+    color: black;
+}
+
+.wd-course-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: " > ";
+}
