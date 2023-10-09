@@ -1,0 +1,44 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    width: 80px;
+}
+
+.wd-kanbas-navigation .list-group {
+    border-radius: 0;
+}
+
+.wd-kanbas-navigation .list-group-item {
+    border: none;
+    background-color: black;  
+    text-align: center;
+    padding:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.wd-kanbas-navigation .list-group-item .link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.wd-kanbas-navigation .list-group-item .icon {
+    font-size: 40px;
+    color: red;
+}
+
+.wd-kanbas-navigation .list-group-item.active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation .list-group-item.active .link {
+    color: red;
+}
+
+.wd-kanbas-navigation .list-group-item.account .icon {
+    color: white;
+}
+
+.wd-kanbas-navigation .list-group-item.active.account .icon {
+    color: gray;
+}

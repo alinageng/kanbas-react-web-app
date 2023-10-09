@@ -1,0 +1,55 @@
+.wd-width-100 {
+    width:100%;
+}
+
+.wd-dashboard {
+    margin-left: 90px;
+    bottom: 0;
+    flex: 1;
+}
+
+.wd-padding-20 {
+    padding: 20px;
+}
+
+.wd-padding-30 {
+    padding-left: 30px;
+    padding-top: 0px;
+
+}
+
+.wd-courses .col {
+    width: 270px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding:0px;
+}
+
+@media (max-width: 700px) {
+    .wd-courses .col {
+        width: 86%; 
+    }
+}
+
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.wd-width-75px {
+    width: 260px;
+}
+
+.colored-image {
+    width: 270px;
+    height: 150px;
+    background-color: #FF5733; 
+    border-top-left-radius: .25em; 
+    border-top-right-radius: .25em;
+}
+  
+
+
