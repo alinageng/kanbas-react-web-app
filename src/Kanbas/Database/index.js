@@ -1,5 +1,8 @@
 import courses from "./courses.json";
-// eslint-disable-next-line import/no-anonymous-default-export
+import modules from "./modules.json";
+import assignments from "./assignments.json";
 export default {
   courses,
+  modules,
+  assignments,
 };
