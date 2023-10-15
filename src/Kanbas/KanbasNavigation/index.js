@@ -24,17 +24,19 @@ function KanbasNavigation() {
                 width="80"
                 alt="Northeastern Uni. Logo"
             />
-            {links.map((link, index) => (
-            <Link
-            key={index}
-            to={`/Kanbas/${link.name}`}
-            className={`list-group-item ${pathname.includes(link.name) && "active"} ${link.name === 'Account' && "account"}`}>
-                <div className="link">
-                    <FontAwesomeIcon icon={link.icon} className="icon" / ><br />
+            {links.map((link, index) => {
+              return (
+                <Link
+                  key={index}
+                  to={`/Kanbas/${link.name}`}
+                  className={`list-group-item ${pathname.includes(link.name) && "active"} ${link.name === 'Account' && "account"}`}>
+                  <div className="link">
+                    <FontAwesomeIcon icon={link.icon} className="icon" /><br />
                     {link.name}
-                </div>
-            </Link>
-        ))}
+                  </div>
+                </Link>
+              );
+            })}
         </div>
     </div>
   );

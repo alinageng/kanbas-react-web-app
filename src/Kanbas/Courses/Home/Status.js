@@ -1,9 +1,11 @@
-import { FaUser, FaFileImport } from 'react-icons/fa';
+import { FaFileImport } from 'react-icons/fa';
 import { MdOutlineLabelImportant } from 'react-icons/md';
 import { LuLifeBuoy } from 'react-icons/lu';
 import { BsBarChartFill } from 'react-icons/bs';
 import { AiOutlineBell } from 'react-icons/ai';
 import { CiBullhorn } from 'react-icons/ci';
+import db from '../../Database';
+import ToDo from './ToDo';
 
 
 function Status() {
@@ -15,6 +17,7 @@ function Status() {
         {name: "New Announcement", icon: <CiBullhorn/>},
         {name: "New Analytics", icon: <BsBarChartFill/>},
         {name: "View Course Notifications", icon: <AiOutlineBell/>}]
+
     return (
         <div>
             <div className="list-group">
@@ -30,7 +33,7 @@ function Status() {
             <div>
                 <h6>To Do</h6>
                 <hr/>
-                
+                <ToDo />
             </div>
         </div>
 
