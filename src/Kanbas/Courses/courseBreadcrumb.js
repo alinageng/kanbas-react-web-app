@@ -15,18 +15,14 @@ function CourseBreadcrumb() {
     return (
         <div 
             className="wd-course-breadcrumb"
-            // style={{
-            // left: "80px",
-            // top: "0px",
-            // }}
         >
-            <FontAwesomeIcon icon={faGripLines} className="icon" / >
+            {/* <FontAwesomeIcon icon={faGripLines} className="icon" / > */}
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb pt-3">
-                <li class="breadcrumb-item">
+                <ol className="breadcrumb pt-3">
+                <li className="breadcrumb-item">
                     {course._id}
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
+                <li className="breadcrumb-item active" aria-current="page">
                     {location}
                 </li>
                 </ol>

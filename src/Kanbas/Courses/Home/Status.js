@@ -4,8 +4,8 @@ import { LuLifeBuoy } from 'react-icons/lu';
 import { BsBarChartFill } from 'react-icons/bs';
 import { AiOutlineBell } from 'react-icons/ai';
 import { CiBullhorn } from 'react-icons/ci';
-import db from '../../Database';
 import ToDo from './ToDo';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 
 function Status() {

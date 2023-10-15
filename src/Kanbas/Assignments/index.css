@@ -1,0 +1,102 @@
+.wd-assignment-container {
+    position:fixed;
+    top:0px;
+    left: 280px;
+    bottom: 0px;
+    flex: 1;
+}
+
+body {
+    overflow: auto;
+}
+.wd-account-navigation-assignment {
+    top: 95px;
+}
+
+.wd-margin-80 {
+    margin-left:80px;
+    margin-right:0px;
+}
+
+.wd-course-nagivation {
+    width: 190px;
+}
+
+.wd-assignments ol {
+    font-size: 20px;
+}
+
+.wd-text {
+    font-size: 10px;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.wd-assignments .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: " > ";
+}
+
+.wd-font-size-20 {
+    font-size: 20px;
+}
+
+.wd-red-color {
+    color: red;
+}
+
+.wd-white-color {
+    color: white;
+}
+
+
+.wd-assignments-list .list-group {
+    border-radius: 0;
+}
+
+.wd-assignments-list .list-group-item.active {
+    background-color: gainsboro;
+    color: black;
+    border-color: gray;
+}
+
+.wd-assignments-list .list-group-item {
+    border-left: 4px solid green;
+}
+
+.wd-assignments-list .list-group-item  a{
+    text-decoration: none;
+    color: black;
+}
+
+.wd-assignments-list .list-group-item i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.wd-assignments-list .list-group-item h6 {
+    margin-bottom: 0px;
+}
+
+.wd-40-total {
+    background-color: gainsboro;
+    border-width: 1px;
+    border-color:gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.wd-green {
+    color: green;
+}
+
+.wd-top-border {
+    border-top:3px solid gray;
+}
+
+.wd-width-150 {
+    width:150px;
+}
+
+
