@@ -18,8 +18,8 @@
 
 }
 
-.wd-courses .col {
-    width: 270px;
+.wd-courses .row .col {
+    width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
@@ -33,6 +33,9 @@
     }
 }
 
+.wd-course-card {
+    height: 300px;
+}
 
 .wd-flex-row-container {
     display: flex;
