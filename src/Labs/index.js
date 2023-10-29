@@ -4,6 +4,7 @@ import {Routes, Route, Navigate} from "react-router";
 import Assignment4 from "./a4";
 import store from "./store";
 import {Provider} from "react-redux";
+import React from 'react';
 
 function Labs() {
   return (

@@ -1,3 +1,5 @@
+import React from 'react';
+
 function VariableTypes() {
     let numberVariable = 123;
     let floatingPointNumber = 234.345;

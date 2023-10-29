@@ -1,5 +1,6 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import "./index.css";
+import React from 'react';
 
 
 function CourseNavigation() {

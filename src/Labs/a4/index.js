@@ -24,7 +24,7 @@ const Assignment4 = () => {
       <ReduxExamples/>
       <Add a={1} b={2}/>
       <ClickEvent/>
-      <PassingDataOnEvent/>
+      {/*<PassingDataOnEvent/>*/}
       <PassingFunctions theFunction={sayHello}/>
       <EventObject/>
       <Counter />
@@ -34,7 +34,6 @@ const Assignment4 = () => {
       <ObjectStateVariable/>
       <ArrayStateVariable/>
       <ParentStateComponent/>
-
     </div>
   );
 };
