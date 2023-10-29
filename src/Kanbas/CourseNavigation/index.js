@@ -3,9 +3,8 @@ import "./index.css";
 import React from 'react';
 
 
-function CourseNavigation() {
+function CourseNavigation({ course }) {
   const links = ["Home", "Modules", "Assignments", "Grades"];
-  const { courseId } = useParams();
   const { pathname } = useLocation();
   return (
     <div className="wd-account-navigation">
@@ -13,7 +12,7 @@ function CourseNavigation() {
         {links.map((link, index) => (
           <Link
             key={index}
-            to={`/Kanbas/Courses/${courseId}/${link}`}
+            to={`/Kanbas/Courses/${course._id}/${link}`}
             className={`list-group-item ${pathname.includes(link) && "active"} ${link}`}>
             {link}
           </Link>

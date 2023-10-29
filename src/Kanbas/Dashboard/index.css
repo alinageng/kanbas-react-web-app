@@ -53,6 +53,11 @@
     border-top-left-radius: .25em; 
     border-top-right-radius: .25em;
 }
+
+.wd-course-edit-buttons {
+    display: flex;
+    align-items: flex-end;
+}
   
 
 
