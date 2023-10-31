@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import {useParams} from "react-router-dom";
-import db from "../../Database";
 import {useSelector, useDispatch} from "react-redux";
 import {
   addModule,
@@ -18,8 +17,6 @@ function ModuleList() {
   return (
     <ul className="list-group">
       <li className="list-group-item">
-
-
         <div className="row">
           <div className="col">
             <div className="row mb-2">
@@ -85,8 +82,6 @@ function ModuleList() {
                   <p>{lesson.description}</p>
                 </div>
               ))}
-
-
           </li>
         ))}
     </ul>
