@@ -1,11 +1,13 @@
-import React from "react";
 import {useParams} from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
+import React, { useEffect, useState } from "react";
+import { findModulesForCourse } from "./client";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "../Modules/modulesReducers";
 
 function ModuleList() {
@@ -13,6 +15,14 @@ function ModuleList() {
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+      );
+  }, [courseId]);
+
 
   return (
     <ul className="list-group">

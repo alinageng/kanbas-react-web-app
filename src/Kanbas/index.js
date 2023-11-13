@@ -10,49 +10,47 @@ import axios from 'axios';
 
 
 function Kanbas() {
-  const [courses, setCourses] = useState([]);
-  const [course, setCourse] = useState({
+  const URL = "http://localhost:4000/api/courses";
+  const defaultCourse = {
     name: "New Course", number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
-  });
-  // const addNewCourse = () => {
-  //   setCourses([...courses, {...course, _id: new Date().getTime().toString()}]);
-  // };
+  };
+  const [courses, setCourses] = useState([]);
+  const [course, setCourse] = useState(defaultCourse);
 
+
+  // creates new course with id of the time of creation instead of the one provided input box
   const addCourse = async () => {
     const response = await axios.post(URL, course);
-
     setCourses(
       currentCourses => [response.data, ...currentCourses]);
-    setCourse({ name: "" });
+    setCourse({ defaultCourse });
   };
-  const deleteCourse = async (course) => {
+  const deleteCourse = async (_id) => {
     const response = await axios.delete(
-      `${URL}/${course._id}`
+      `${URL}/${_id}`
     );
     setCourses(courses.filter(
-      (c) => c._id !== course._id));
+      (c) => c._id !== _id));
   };
 
-
-
-  // const deleteCourse = (courseId) => {
-  //   setCourses(courses.filter((course) => course._id !== courseId));
-  // };
-  const updateCourse = () => {
+  const updateCourse = async () => {
+    const response = await axios.put(
+      `${URL}/${course._id}`,
+      course
+    );
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
+          return response.data;
         }
+        return c;
       })
-    )
-  }
+    );
+    setCourse(defaultCourse);
+  };
 
 
-  const URL = "http://localhost:4000/api/courses";
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
