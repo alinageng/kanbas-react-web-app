@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
 import React, { useEffect, useState } from "react";
-import { findModulesForCourse } from "./client";
+import * as client from "./client";
 import {
   addModule,
   deleteModule,
@@ -15,9 +15,25 @@ function ModuleList() {
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
 
   useEffect(() => {
-    findModulesForCourse(courseId)
+    client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
       );
@@ -51,11 +67,11 @@ function ModuleList() {
           <div className="col">
             <div className="float-end">
               <button className="btn btn-primary"
-                      onClick={() => dispatch(updateModule(module))}>
+                      onClick={() => handleUpdateModule()}>
                 Update
               </button>
               <button className="btn btn-success"
-                      onClick={() => dispatch(addModule({...module, course: courseId}))}>
+                      onClick={handleAddModule}>
                 Add
               </button>
             </div>
@@ -78,7 +94,7 @@ function ModuleList() {
                     Edit
                   </button>
                   <button className="btn btn-danger"
-                          onClick={() => dispatch(deleteModule(module._id))}>
+                          onClick={() => handleDeleteModule(module._id)}>
                     Delete
                   </button>
                 </div>
