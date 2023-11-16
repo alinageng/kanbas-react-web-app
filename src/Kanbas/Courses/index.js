@@ -11,7 +11,8 @@ import Grades from "./Grades";
 
 
 function Courses({ courses }) {
-  const URL = "http://localhost:4000/api/courses";
+  // TODO should be in client.js
+  const URL = `${process.env.REACT_APP_API_BASE}/courses`;
   const { courseId } = useParams();
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
@@ -50,8 +51,6 @@ function Courses({ courses }) {
             </Routes>
         </div>
       </div>
-      
-      
     </div>
   );
 }
