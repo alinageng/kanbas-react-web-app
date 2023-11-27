@@ -1,11 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faTachometerAlt, faBook, faCalendarWeek, faInbox, faClock, faSpider, faArrowRight, faQuestionCircle} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faSignOutAlt, faTachometerAlt, faBook, faCalendarWeek, faInbox, faClock, faSpider, faArrowRight, faQuestionCircle} from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 
 function KanbasNavigation() {
   const links = [
-    {name: "Account", icon: faUser}, 
+    {name: "Signin", icon: faUser},
+    {name: "Signup", icon: faUser},
+    {name: "Account", icon: faUser},
     {name: "Dashboard", icon: faTachometerAlt},
     {name: "Courses", icon: faBook},
     {name: "Calender", icon: faCalendarWeek},
