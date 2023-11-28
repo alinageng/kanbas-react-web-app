@@ -1,6 +1,6 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 function Account() {
   const [account, setAccount] = useState(null);
   const navigate = useNavigate();
@@ -8,15 +8,18 @@ function Account() {
     const account = await client.account();
     setAccount(account)
   };
+  const signout = async () => {
+    await client.signout();
+    navigate("/Kanbas/Signin");
+  };
+
   const save = async () => {
     await client.updateUser(account);
   }
   useEffect(() => {
     fetchAccount();
   }, []);
-  const goToUserTable = () => {
-    navigate("/Kanbas/Admin/Users");
-  }
+
 
   return (
     <div className="container">
@@ -45,12 +48,15 @@ function Account() {
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
           </select>
-          <button className="btn btn-primary" onClick={save}>
+          <button className="btn btn-primary w-100" onClick={save}>
             Save
           </button>
-          <button className="btn btn-danger" onClick={goToUserTable}>
-            Users
+          <button className="btn btn-danger w-100" onClick={signout}>
+            Signout
           </button>
+          <Link to="/Kanbas/Admin/Users" className="btn btn-warning w-100">
+            Users
+          </Link>
         </div>
       )}
     </div>

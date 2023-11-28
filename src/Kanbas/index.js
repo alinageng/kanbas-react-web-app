@@ -10,6 +10,7 @@ import axios from 'axios';
 import Signin from "./Users/signin";
 import Account from "./Users/account";
 import UserTable from "./Users/table";
+import Signup from "./Users/signup";
 
 
 function Kanbas() {
@@ -74,6 +75,7 @@ function Kanbas() {
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard"/>}/>
             <Route path="Account" element={<Account/>}/>
+            {/*<Route path="Account/:accountId" element={<Account/>}/>*/}
             <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>}/>
             <Route path="Dashboard" element={
               <Dashboard
@@ -85,6 +87,7 @@ function Kanbas() {
                 updateCourse={updateCourse}/>}
             />
             <Route path="/Signin" element={<Signin />}/>
+            <Route path="/Signup" element={<Signup />}/>
             <Route path="/Admin/Users" element={<UserTable />}/>
           </Routes>
         </div>
